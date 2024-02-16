@@ -16,7 +16,7 @@ Este projeto consiste em uma API para gerenciamento de clientes e seus endereço
  Java
 - [![Spring](https://img.shields.io/badge/Spring-Framework-green?style=for-the-badge&logo=spring)](https://spring.io/)
  Spring Framework (Spring Boot, Spring Data JPA, H2 DataBase,openfeign )
-- [![Database](https://img.shields.io/badge/Database-MySQL,PostgreSQL-blue?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+- [![Database](https://img.shields.io/badge/Database-H2-blue?style=for-the-badge&logo=mysql&logoColor=white)](https://www.h2database.com/html/main.html)
  Banco de Dados (H2 em memoria)
 ## Estrutura de Dados
 
