@@ -12,9 +12,12 @@ Este projeto consiste em uma API para gerenciamento de clientes e seus endereço
 
 ## Tecnologias Utilizadas
 
-- Java
-- Spring Framework (Spring Boot, Spring Data JPA, H2 DataBase,openfeign )
-- Banco de Dados (H2 em memoria)
+- [![Java](https://img.shields.io/badge/Java-Programming-blue?style=for-the-badge&logo=java)](https://www.oracle.com/java/)
+ Java
+- [![Spring](https://img.shields.io/badge/Spring-Framework-green?style=for-the-badge&logo=spring)](https://spring.io/)
+ Spring Framework (Spring Boot, Spring Data JPA, H2 DataBase,openfeign )
+- [![Database](https://img.shields.io/badge/Database-MySQL,PostgreSQL-blue?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+ Banco de Dados (H2 em memoria)
 ## Estrutura de Dados
 
 Um cliente é representado pelo seguinte formato JSON:
@@ -37,15 +40,14 @@ Um cliente é representado pelo seguinte formato JSON:
   }
 }
 ```
-## Endpoints Disponíveis
+# Endpoints Disponíveis
 
-# Listar Todos os Clientes
+## Listar Todos os Clientes
 Endpoint para obter uma lista de todos os clientes cadastrados.
 
 
-# /clientes
+### /clientes - GET
 Método HTTP
-GET
 Resposta de Sucesso (200 OK)
 Retorna uma lista de objetos JSON, cada um representando um cliente cadastrado.
 
@@ -74,12 +76,11 @@ Exemplo de Resposta
 ## Buscar Cliente por ID
 Endpoint para buscar um cliente específico pelo seu ID.
 
-/clientes/{id}
+### /clientes/{id} - GET
 Método HTTP
-GET
 Parâmetros de URL
 
-## {id} - O ID do cliente a ser buscado.
+### {id} - O ID do cliente a ser buscado.
 Resposta de Sucesso (200 OK)
 Retorna um objeto JSON representando o cliente encontrado.
 
@@ -104,13 +105,11 @@ Exemplo de Resposta
   }
 }
 ```
-###Inserir Cliente
+## Inserir Cliente
 Endpoint para inserir um novo cliente.
 URL
-/clientes
+### /clientes - POST
 Método HTTP
-
-POST
 Corpo da Requisição
 Um objeto JSON representando o novo cliente a ser inserido.
 
@@ -150,9 +149,8 @@ Exemplo de Corpo da Requisição
 
 ## Deletar Cliente
 Endpoint para deletar um cliente existente.
-/clientes/{id}
+### /clientes/{id} - DELETE
 Método HTTP
-DELETE
 
 Parâmetros de URL
 
@@ -162,7 +160,7 @@ Resposta de Sucesso (200 OK)
 
 Retorna uma resposta vazia com status 200.
 
-Observações
+# Observações
 Certifique-se de substituir {id} pelos IDs reais dos clientes ao fazer solicitações para os endpoints.
 Os exemplos fornecidos são meramente ilustrativos e devem ser substituídos por dados reais.
 Certifique-se de ajustar os detalhes dos endpoints conforme a implementação real da API.
